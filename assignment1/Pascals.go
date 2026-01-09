@@ -6,7 +6,9 @@ func main(){
 	fmt.Scan(&a)
     for i=0;i<=a;i++ {
 		for j=0;j<=i;j++ {
-			fmt.Println(i,"\n")
+			
 		}
+		fmt.Println(i)
+		fmt.Println("/n")
 	}
 }
