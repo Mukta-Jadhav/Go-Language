@@ -5,7 +5,7 @@ func main(){
 	a,b:=0,1
 	fmt.Println("Fibonacci sequence (%d terms):",n)
 	for i:=0;i<n;i++{
-		fmt.Println("%d",a)
+		fmt.Printf("%d \t",a)
 		a,b=b,a+b
 	}
 

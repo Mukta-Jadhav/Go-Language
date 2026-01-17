@@ -1,14 +1,20 @@
 package main
 import ("fmt")
 func main(){
-	var a ,i,j int
-	fmt.Print("enter a number:")
-	fmt.Scan(&a)
-    for i=0;i<=a;i++ {
-		for j=0;j<=i;j++ {
+	var n ,a int
+	fmt.Printf("enter a number of rows:")
+	fmt.Scanf("%d",&n)
+    for row:=1;row<=n;row++ {
+		a=1
+		for i:=1;i<=40-row;i++ {
+			fmt.Printf(" ")
 			
 		}
-		fmt.Println(i)
-		fmt.Println("/n")
+		for i:=1;i<=row;i++{
+           fmt.Printf("%d",a)
+		   a=a*(row-i)/i
+		}
+		
+		fmt.Print("\n")
 	}
 }
